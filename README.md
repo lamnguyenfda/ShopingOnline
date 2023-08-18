@@ -8,40 +8,41 @@
       + Open Terminal or Command Prompt.
       +  Run the following command to clone the project from GitHub:
   
-  =====================================
+  ==========================
 git clone https://github.com/lamnguyenfda/ShopingOnline.git
-  ===================================
+  ==========================
   
     + Navigate to the project directory:
 
- =======================================
+ =============================
+ 
   cd MultiShop
- =======================================
+ =============================
 - Step 2: Configure the Database
    + Open SQL Server.
    + Create a new database with the name "MuLtiShop".
    + Update the database configuration information in the src/main/resources/application.properties file:
      
-========================================
+==============================
 spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
 spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=MuLtiShop;encrypt=true;trustServerCertificate=true;
 spring.datasource.username=your-sql-username
 spring.datasource.password=your-sql-password
-========================================
+=============================
 
 Step 3: Build and Run the Application
     +  Open Terminal or Command Prompt in the project directory.
     +  Run the following command to build the application and install its dependencies:
      
-  ===================================
+  =========================
      mvn clean install
-  ===================================
+  ==========================
   
   + Run the application using the command:
 
-======================================
+===========================
 mvn spring-boot:run
-=======================================
+===========================
 
    + The application will start running at the address http://localhost:8080/index
 
